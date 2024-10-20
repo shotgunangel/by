@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Mi Esposa.</title>
+<style>
+      body
+           { 
+           background-color: lightpink; 
+           color: beige 
+           }
+</style>     
+<script type="text/javascript">
+flag=1
+function f1()
+{
+    var Name = prompt("enter our call sign");
+    
+    if(Name == "" || Name == null) {
+    alert("please enter our call sign.");
+    } else {
+    alert("Hi " + Name + ", good luck to your performances tommorow baby, do your best po, I'm always proud of you."); 
+    }
+}
+function f()
+{
+    if(flag==1)
+        {
+            Bn.style.top=400
+            Bn.style.left=300
+            flag=2
+        }
+    else if(flag==2)
+        {
+            Bn.style.top=400
+            Bn.style.left=50
+            flag=3
+        }
+    else if(flag==3)
+        {
+            Bn.style.top=370
+            Bn.style.left=166
+            flag=1
+        }
+}
+</script>
+
+</head>
+<body>
+<h1> Hey! you look beautiful!</h1>
+<img src="/aww-cute.gif" height="200" />
+<h1 style="#">don't you think?</h1>
+<div id="By" style="position:absolute; left:64px; top:370px; width:210px;
+height:210px;">
+<input type="button" value=" YES " onClick="f1()" />
+</div>
+<div ID="Bn" style="position:absolute; left:166px; top:370px; width:210px; height:210px;">
+<input type="button" value=" NO " onMouseOver="f()" />
+</div>
+
+</body>
+</html>
